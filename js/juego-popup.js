@@ -5,7 +5,7 @@ window.onload = () => {
     window.addEventListener("mostrar", (e) => {
 
         // Ens assegurem que el missatge ve del mateix origen al que estem
-        if (e.origin == "http://127.0.0.1:5500") {
+        if (e.origin == "http://127.0.0.1:5501") {
             console.log(e);
             text.innerText += e.data + "\n";
         }
