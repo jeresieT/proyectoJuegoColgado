@@ -1,15 +1,11 @@
 window.onload = () => {
-    let text = document.getElementById("mostrar");
-
-    // Escoltem missatges enviats a la finestra
-    window.addEventListener("mostrar", (e) => {
-
-        // Ens assegurem que el missatge ve del mateix origen al que estem
-        if (e.origin == "http://127.0.0.1:5501") {
-            console.log(e);
-            text.innerText += e.data + "\n";
+    window.addEventListener("message", (event) => {
+        // Asegúrate de que el mensaje sea sobre las vidas
+        if (event.data && typeof event.data.vidas !== "undefined") {
+            const vidasRestantes = event.data.vidas;
+            document.getElementById("vidas-restantes").textContent = `Vidas restantes: ${vidasRestantes}`;
         }
-
-    })
+    });
+    
     
 }

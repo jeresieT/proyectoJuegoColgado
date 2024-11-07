@@ -45,7 +45,7 @@ body {
     border-radius: 10px;
 }
 
-input[type="button"] {
+input[type="submit"] {
     width: 70px;
     height: 60px;
     margin: 20px;
@@ -58,10 +58,10 @@ input[type="button"] {
     transition: background-color 0.3s ease;
 }
 
-input[type="button"]:hover {
+input[type="submit"]:hover {
     background-color: #bbb;
 }
 
-input[type="button"]:active {
+input[type="submit"]:active {
     background-color: #999;
 }
