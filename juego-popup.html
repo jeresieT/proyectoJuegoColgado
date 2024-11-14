@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colgado</title>
-    <script src="js/juego-popup.js"></script>
     <link rel="stylesheet" href="css/estilo1.css">
+    <style>
+        .vida-imagen {
+            width: 200px;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-    <img class="img-popup" src="img/ahorcado.webp" alt="" class="display">
-    <p id="vidas-restantes">Vidas restantes: 5</p>
+    <h1>Vidas Restantes: <span id="vidas-restantes">5</span></h1>
+    <img id="imagen-vidas" class="vida-imagen" src="img/perdida1.png" alt="Estado de vidas">
+    <script src="./js/juego-popup.js"></script>
+
 </body>
 </html>
+
